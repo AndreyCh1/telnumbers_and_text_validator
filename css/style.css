@@ -1,0 +1,13 @@
+body {
+    background-color: #c9c9c9;
+}
+
+.description {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 300px;
+    font: 500 24px Arial;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-let stopSumbol = " $@<>{}?/\|%&!()№#+"
+let bannedSumbol = " $@<>{}?/\|%&!()№#+"
 
 function phoneNum() {
     let number = prompt("Введіть свій номер: ", "Ваш номер")
@@ -16,12 +16,12 @@ let numberTransform = function (userNumber) {
             console.log(userNumber)
             userNumber = prompt("Введіть свій номер: ")
             phoneNum()
-        } else if (stopSumbol.includes(userNumber[i])) {
+        } else if (bannedSumbol.includes(userNumber[i])) {
             let numberCut1 = userNumber.slice(0, i),
                 numberCut2 = userNumber.slice(i + 1)
             userNumber = numberCut1 + numberCut2
             console.log(i + "." + userNumber) // перевірка першого символа
-            console.log("Hello")
+            // console.log("Hello")
         }
     }
     let phoneCut1 = userNumber.slice(0, 3) + "-",
